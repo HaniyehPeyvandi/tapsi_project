@@ -135,7 +135,7 @@ h2{
 .list--tick .list__item{
   background: url(/assets/images/Tick-Square.svg) no-repeat;
   background-position: right center;
-  padding-right: 2.5rem;
+  padding-right: 3rem;
   margin-bottom: 1.5rem;
 }
 
@@ -144,4 +144,91 @@ h2{
     font-size: 1.8rem;
     margin-bottom: 2rem;
   }
+}
+
+/* Plan */
+.block-plan{
+  display: grid;
+  gap: 8rem 6rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit,minmax(250px,320px));
+  margin-top: 5rem;
+}
+
+.plan{
+  font-size: 1.8rem;
+  transition: all 0.2s ease-out;
+}
+
+.card{
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 10px hsla(0, 4%, 95%, 0.986);
+}
+
+.card__header , .card__body{
+  padding: 3rem 2.5rem;
+}
+
+.card__header{
+  color: var(--color-white);
+}
+
+.card--secondary .card__header{
+  background-color: var(--color-secondary-dark);
+}
+
+.card--primary .card__header{
+  background-color: var(--color-primary-light);
+}
+
+.plan__introduction{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.plan__price{
+  font-size: 3rem;
+}
+
+.plan__billing-cycle{
+  font-size: 1.4rem;
+}
+
+.plan__description{
+  margin-top: 1.5rem;
+  display: block;
+}
+
+.plan .btn--block{
+  margin-top: 10rem;
+  font-size: 1.6rem;
+}
+
+.plan--popular{
+  transform: scale(1.1);
+}
+
+.plan:hover{
+  transform: scale(1.05);
+}
+
+.plan--popular:hover{
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 1024px) {
+  /* .block-plan{
+    grid-template-columns: repeat(3,1fr);
+  } */
+  .plan .btn--block{
+    font-size: 1.8rem;
+  }
+}
+
+/* Container */
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
 }
