@@ -438,3 +438,69 @@ textarea{
 .form-wrapper textarea{
   border-radius: 5px;
 }
+
+/* Footer */
+.main-footer{
+  background-color: #000;
+  color: var(--color-white);
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.main-footer .footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__item{
+  margin-bottom: 2.5rem;
+}
+
+.footer__item a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.footer__item h6{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer__item.enemad{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__enemad{
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  max-width: 86px;
+  margin-left: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__enemad img{
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .main-footer .footer{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer__item{
+    margin-bottom: 0;
+    margin-left: 2rem;
+  }
+  
+}
