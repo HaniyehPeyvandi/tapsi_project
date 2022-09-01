@@ -981,3 +981,72 @@ textarea{
   font-size: 1.4rem;
   margin-top: 1rem;
 }
+
+/* Accordion */
+.accordion__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 2rem;
+  border-bottom: 2px solid #ececec;
+}
+
+.accordion__heading{
+  margin-bottom: 0;
+  color: #3a3a3a;
+  font-size: 1.8rem;
+}
+
+.accordion__content{
+  border-radius: 5px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+}
+
+.accordion__content p{
+  border-bottom: 2px solid #ececec;
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: #878787;
+}
+
+.accordion.accordion__expanded .accordion__content{
+  max-height: 100vh;
+  opacity: 1;
+  padding: 1rem 4rem;
+}
+
+.accordion__header i{
+  color: var(--color-primary);
+  font-size: 2rem;
+  transition: all 0.3s ease-out;
+}
+
+.accordion.accordion__expanded .accordion__header i{
+  transform: rotate(-90deg);
+}
+
+.accordion-wrapper{
+  background-color: var(--color-white);
+  border-radius: 10px;
+  border: 2px solid #ececec;
+  box-shadow: 0 9px 12px rgba(0, 0, 0, 0.05);
+}
+
+.accordion__intro{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  border-bottom: 2px solid #ececec;
+}
+
+.accordion__intro .accordion__edit{
+  color: var(--color-primary);
+}
+
+
+
