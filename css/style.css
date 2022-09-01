@@ -1098,4 +1098,61 @@ textarea{
   display: inline-block;
 }
 
+/* Select-type */
+.select-type{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-control input[type="radio"]{
+  display: none;
+}
+
+.select-control{
+  flex-grow: 1;
+}
+
+.select-type :not(:last-child){
+  margin-left: 2rem;
+}
+
+.select-control label{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 2rem;
+  border: 2px solid #ccc;
+  border-radius: 32px; 
+  color: #777;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: relative;
+}
+
+.select-control label::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #ccc;
+  border: 3px solid var(--color-white);
+  right: 2.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-out;
+}
+
+.select-control input[type="radio"]:checked + label{
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.select-control input[type="radio"]:checked + label::before{
+  box-shadow: 0 0 0 2px var(--color-primary);
+  background-color: var(--color-primary);
+}
+
 
