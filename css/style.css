@@ -16,6 +16,7 @@
   --color-headings: #000;
   --color-body: #333333;
   --color-white: #fff;
+  --avatar-size: 46px;
 }
 
 /* Typography */
@@ -1048,5 +1049,53 @@ textarea{
   color: var(--color-primary);
 }
 
+/* Avatar */
+.avatar-group{
+  display: flex;
+  align-items: center;
+  margin: 1.3rem 0;
+}
+
+.avatar-group .avatar{
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border: 3px solid var(--color-white);
+  border-radius: 100%;
+  overflow: hidden;
+  margin-left: -15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.avatar:hover{
+  transform: translateX(8px);
+}
+
+.avatar img{
+  width: 100%;
+  height: 100%;
+}
+
+.hidden-avatars{
+  background-color: var(--color-primary-light);
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 100%;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--color-white);
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.slide__suggest{
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-right: 5px;
+  display: inline-block;
+}
 
 
