@@ -889,11 +889,11 @@ textarea{
 }
 
 .block{
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
 }
 
 .block-heading{
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 @media screen and (min-width: 768px) {
